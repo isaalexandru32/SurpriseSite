@@ -13,11 +13,16 @@ function osmanChair() {
     
 }
 
+function funnyOnClick() {
+    h1Counter.removeAttribute('onclick');
+    changeCounter();
+}
 
 
 function changeCounter() {
     counter.textContent= sec;
     sec--;
+
     if (sec == -1) {
         osmanChair();
     }
